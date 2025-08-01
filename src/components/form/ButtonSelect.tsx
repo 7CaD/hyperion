@@ -1,10 +1,10 @@
 import { Button, ButtonGroup, ButtonProps, Flex, Text } from "@chakra-ui/react";
-import { FormComponentStandardProps } from "@structal/form";
+import { SkhmaFieldBaseProps } from "@skhma/form";
 
 export default function ButtonSelect({
   value,
   onChange,
-  label,
+  formControlProps,
   options,
   buttonProps = {},
 }: {
@@ -12,10 +12,10 @@ export default function ButtonSelect({
   buttonProps?: ButtonProps & {
     variant?: "solid" | "outline" | "ghost" | "link";
   };
-} & FormComponentStandardProps) {
+} & SkhmaFieldBaseProps) {
   return (
     <Flex gap="1">
-      <Text>{label}</Text>
+      <Text>{formControlProps.label}</Text>
       <ButtonGroup isAttached>
         {options?.map((option) => {
           const { label: btnLabel, value: currentValue } =

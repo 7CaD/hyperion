@@ -1,6 +1,6 @@
-import { makeStructalForm } from "~/utils/form.utils";
+import { makeForm } from "~/utils/form.utils";
 
-export const { Form: OptionForm } = makeStructalForm({
+export const OptionForm = makeForm({
   fields: ({ buttonSelect }) => ({
     popupType: buttonSelect({
       props: {

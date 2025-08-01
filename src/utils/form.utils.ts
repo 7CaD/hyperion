@@ -1,7 +1,7 @@
-import { init } from "@structal/form";
+import init from "@skhma/form";
 import ButtonSelect from "~/components/form/ButtonSelect";
 
-export const { makeStructalForm } = init({
+export const { makeForm } = init({
   components: {
     buttonSelect: ButtonSelect,
   },

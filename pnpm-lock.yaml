@@ -17,9 +17,9 @@ importers:
       '@emotion/styled':
         specifier: ^11.11.5
         version: 11.11.5(@emotion/react@11.11.4(@types/react@18.3.3)(react@18.3.1))(@types/react@18.3.3)(react@18.3.1)
-      '@structal/form':
-        specifier: ^0.4.3
-        version: 0.4.3
+      '@skhma/form':
+        specifier: ^1.11.3
+        version: 1.11.3(react@18.3.1)
       framer-motion:
         specifier: ^11.2.12
         version: 11.2.12(@emotion/is-prop-valid@1.2.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -885,8 +885,10 @@ packages:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
     engines: {node: '>= 8.0.0'}
 
-  '@structal/form@0.4.3':
-    resolution: {integrity: sha512-J8R8Dwy5ke3T0GYbLx+WcIpblRA03AAmCPPfklM+VpYmMJyIFzctw4oEiBHqcdOMQskun4I5dpWw7RPWhx4MBA==}
+  '@skhma/form@1.11.3':
+    resolution: {integrity: sha512-stszlEGZyRq9EYmKDZTRpzMO/n/d8+eOAt4bgMNXAVioNt808I/qlqyxAaM38GY1srGfC38fOHfch5CE5m+RQA==}
+    peerDependencies:
+      react: ^19.0.0
 
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
@@ -1538,7 +1540,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -3812,11 +3814,10 @@ snapshots:
       estree-walker: 2.0.2
       picomatch: 2.3.1
 
-  '@structal/form@0.4.3':
+  '@skhma/form@1.11.3(react@18.3.1)':
     dependencies:
       lodash: 4.17.21
       react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
       react-hook-form: 7.52.1(react@18.3.1)
 
   '@types/babel__core@7.20.5':

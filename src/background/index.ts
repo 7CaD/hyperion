@@ -2,10 +2,10 @@ import { APP_POPUP_DIMENSIONS } from "~/constants";
 import { frequentTabsStore } from "~/models/tabs.models";
 import { PopupContainerType } from "~/types";
 import { storageObject } from "~/utils/storage.utils";
-chrome.action.setPopup({
-  // popup: "",
-  popup: chrome.runtime.getURL("./popup.html"),
-});
+// chrome.action.setPopup({
+//   // popup: "",
+//   popup: chrome.runtime.getURL("./popup.html"),
+// });
 console.log("background is running");
 
 const storage = storageObject({
